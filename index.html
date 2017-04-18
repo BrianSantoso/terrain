@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Terrain Modeler</title>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyXryZQmubVlsiK_AURJkQZ_qAuw6MqjU&libraries=places,geometry,drawing"></script>
+        <script src="js/three.js"></script>
+        <script src="js/Detector.js"></script>
+        <script src="js/TrackballControls.js"></script>
+        <script src="js/app.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    
+    <body bgcolor="#ffffff">
+        
+        <br>
+        <input type="text" id="autocomplete" class="wndw"> <br>
+        <div id="map" class="wndw"></div> <br>
+        
+        <div>
+            Spin Geometry <br>
+            <input type="checkbox" class="options" id="spinGeoemetryCheckbox" checked=true value=true onclick="spinGeometry = !spinGeometry"> 
+        </div>
+        <div>
+            Rotation Speed <br>
+            <input type="range" id="rotationSpeedSlider" class="options" value="0.6" min="-4" max="4" step="0.3" onchange="rotationSpeed=+value" > 
+        </div>
+        <div>
+            <button class="options" id="resetSpeedButton" onclick="rotationSpeed=0.6; rotationSpeedSlider.value=0.6;"> Reset Rotation Speed</button>
+        </div>
+        <div>
+            <button class="options" id="resetOrientationButton" onclick="resetOrientation()"> Reset Orientation</button> 
+        </div>
+        
+    </body>
+    
+</html>
+
+<!-- PERSONAL API KEY: AIzaSyBdDvbAzsCMj50hy2KEJCet2A6F8W_wyAg -->
+<!-- SCHOOL API KEY: AIzaSyAyXryZQmubVlsiK_AURJkQZ_qAuw6MqjU -->

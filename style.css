@@ -1,0 +1,31 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#map {
+
+  width: 50%;
+  height: 50%;
+  margin: 0;
+}
+
+
+#autocomplete {
+  width: 50%;
+  height: 25px;
+}
+
+.options {
+    
+    font-family: "Lucida Console";
+    
+}
+
+*
+{
+    text-align: center !important;
+    margin: auto !important;
+}
+
+/* http://stackoverflow.com/questions/14920983/how-to-center-all-elements-in-html */
